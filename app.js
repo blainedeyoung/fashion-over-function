@@ -30,17 +30,17 @@ function setImage(n) {
   powerWordSpan.innerHTML = powerWords[n];
   setTimeout( () => {
     powerWordSpan.innerHTML = '';
-  }, 1990);
+  }, 2000);
   if (n === centerImages.length - 1) {
     setTimeout ( () => {
       setImage(0);
       centerImages[n].style.zIndex = 0;
-    }, 10990);
+    }, 11000);
   } else {
     setTimeout ( () => {
       setImage(n+1);
       centerImages[n].style.zIndex = 0;
-    }, 10990);
+    }, 11000);
   }
 };
 
