@@ -1,0 +1,44 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../../bootstrap-5.0.1/scss/functions";
+// 2. Include any default variable overrides here
+// @import "variables";
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../../bootstrap-5.0.1/scss/mixins";
+@import "../../bootstrap-5.0.1/scss/variables";
+// 4. Include any optional Bootstrap components as you like
+@import "optionalBootstrapComponents";
+// 5. Add additional custom code here
+@import "animations";
+
+#westWall {
+  background-image: url(../images/westWallFloralPattern.svg);
+  background-size: contain;
+}
+
+#eastWall {
+  background-image: url(../images/eastWallFloralPattern.svg);
+  background-size: contain;
+}
+
+#fringe {
+  height: 34rem;
+  width: 51rem;
+}
+
+#imageBox {
+  height: 18rem;
+  width: 27rem;
+  overflow: hidden;
+}
+
+.centerImage {
+  height: 18rem;
+  width: 27rem;
+}
+
+.shutter {
+  width: 50%;
+  animation: close 9s 1s linear infinite forwards;
+  z-index: 2;
+}
+
