@@ -9529,52 +9529,63 @@ textarea.form-control-lg {
 @-webkit-keyframes close {
   0% {
     width: 50%; }
-  9% {
+  18% {
     width: 50%; }
-  31% {
+  36% {
     width: 0; }
-  53% {
+  54% {
     width: 0; }
-  91% {
+  90% {
     width: 50%; }
   100% {
     width: 50%; } }
 @keyframes close {
   0% {
     width: 50%; }
-  9% {
+  18% {
     width: 50%; }
-  31% {
+  36% {
     width: 0; }
-  53% {
+  54% {
     width: 0; }
-  91% {
+  90% {
     width: 50%; }
   100% {
     width: 50%; } }
+body {
+  overflow-x: hidden; }
+
 #westWall {
   background-image: url(../images/westWallFloralPattern.svg);
-  background-size: contain; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20%; }
 
 #eastWall {
   background-image: url(../images/eastWallFloralPattern.svg);
-  background-size: contain; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20%; }
 
 #fringe {
-  height: 34rem;
-  width: 51rem; }
+  height: 50rem;
+  width: 75rem; }
 
 #imageBox {
-  height: 18rem;
-  width: 27rem;
+  height: 28rem;
+  width: 42rem;
   overflow: hidden; }
 
 .centerImage {
-  height: 18rem;
-  width: 27rem; }
+  height: 28rem;
+  width: 42rem; }
 
 .shutter {
   width: 50%;
-  -webkit-animation: close 9s 1s linear infinite forwards;
-          animation: close 9s 1s linear infinite forwards;
   z-index: 2; }
+
+#powerWords {
+  color: red;
+  font-size: 300%;
+  z-index: 3;
+  text-align: center; }

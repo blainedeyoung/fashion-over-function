@@ -10,35 +10,49 @@
 // 5. Add additional custom code here
 @import "animations";
 
+body {
+  overflow-x: hidden;
+}
+
 #westWall {
   background-image: url(../images/westWallFloralPattern.svg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20%;
 }
 
 #eastWall {
   background-image: url(../images/eastWallFloralPattern.svg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20%;
 }
 
 #fringe {
-  height: 34rem;
-  width: 51rem;
+  height: 50rem;
+  width: 75rem;
 }
 
 #imageBox {
-  height: 18rem;
-  width: 27rem;
+  height: 28rem;
+  width: 42rem;
   overflow: hidden;
 }
 
 .centerImage {
-  height: 18rem;
-  width: 27rem;
+  height: 28rem;
+  width: 42rem;
 }
 
 .shutter {
   width: 50%;
-  animation: close 9s 1s linear infinite forwards;
+  // animation: close 11s 2s linear infinite forwards;
   z-index: 2;
 }
 
+#powerWords {
+  color: red;
+  font-size: 300%;
+  z-index: 3;
+  text-align: center;
+}

@@ -10,6 +10,10 @@
 // import 'bootstrap/js/dist/toast';
 // import 'bootstrap/js/dist/tooltip';
 
+//this is the span that will hold the power powerWords
+const powerWordSpan = document.getElementById('powerWords');
+const powerWords = ['Elegant', 'Professional', 'Sharp', 'Sensual', 'Fun', 'Classic'];
+
 //image box images grouped into an array
 const unsplash1 = document.getElementById('unsplash1');
 const unsplash2 = document.getElementById('unsplash2');
@@ -23,20 +27,24 @@ const centerImages = [unsplash1, unsplash2, unsplash3, unsplash4, unsplash5, uns
 //and start a timer that will call this again to set the next one in sequence
 function setImage(n) {
   centerImages[n].style.zIndex = 1;
+  powerWordSpan.innerHTML = powerWords[n];
+  setTimeout( () => {
+    powerWordSpan.innerHTML = '';
+  }, 1990);
   if (n === centerImages.length - 1) {
     setTimeout ( () => {
       setImage(0);
       centerImages[n].style.zIndex = 0;
-    }, 8990);
+    }, 10990);
   } else {
     setTimeout ( () => {
       setImage(n+1);
       centerImages[n].style.zIndex = 0;
-    }, 8990);
+    }, 10990);
   }
 };
 
 window.onload = setTimeout( () => {
   setImage(0);
-}, 1000
+}, 2000
 );
