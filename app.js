@@ -10,6 +10,14 @@
 // import 'bootstrap/js/dist/toast';
 // import 'bootstrap/js/dist/tooltip';
 
+//this script will initialize popovers
+//you can use basically this same script initialize tooltips
+//just by replacing 'popover' with 'tooltip' 
+const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover-hover"]'));
+const popoverList = popoverTriggerList.map((popoverTriggerEl) => {
+  return new bootstrap.Popover(popoverTriggerEl)
+});
+
 //this is the span that will hold the power powerWords
 const powerWordSpan = document.getElementById('powerWords');
 const powerWords = ['Elegant', 'Professional', 'Sharp', 'Sensual', 'Fun', 'Classic'];
@@ -35,12 +43,12 @@ function setImage(n) {
     setTimeout ( () => {
       setImage(0);
       centerImages[n].style.zIndex = 0;
-    }, 11000);
+    }, 10000);
   } else {
     setTimeout ( () => {
       setImage(n+1);
       centerImages[n].style.zIndex = 0;
-    }, 11000);
+    }, 10000);
   }
 };
 

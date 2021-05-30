@@ -14,6 +14,10 @@ body {
   overflow-x: hidden;
 }
 
+#advSearchBtn {
+  width: 100%;
+}
+
 #westWall {
   background-image: url(../images/westWallFloralPattern.svg);
   background-size: cover;
@@ -46,7 +50,7 @@ body {
 
 .shutter {
   width: 50%;
-  // animation: close 11s 2s linear infinite forwards;
+  animation: close 10s 2s linear infinite forwards;
   z-index: 2;
 }
 
