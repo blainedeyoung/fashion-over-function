@@ -1,14 +1,13 @@
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../../bootstrap-5.0.1/scss/functions";
 // 2. Include any default variable overrides here
-// @import "variables";
+@import "variables";
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../../bootstrap-5.0.1/scss/mixins";
 @import "../../bootstrap-5.0.1/scss/variables";
 // 4. Include any optional Bootstrap components as you like
 @import "optionalBootstrapComponents";
 // 5. Add additional custom code here
-@import "animations";
 
 body {
   overflow-x: hidden;
@@ -16,6 +15,10 @@ body {
 
 #advSearchBtn {
   width: 100%;
+}
+
+#mainTopSection {
+  min-height: 95vh;
 }
 
 #westWall {
@@ -40,7 +43,6 @@ body {
 #imageBox {
   height: 28rem;
   width: 42rem;
-  overflow: hidden;
 }
 
 .centerImage {
@@ -48,15 +50,14 @@ body {
   width: 42rem;
 }
 
-.shutter {
-  width: 50%;
-  animation: close 10s 2s linear infinite forwards;
-  z-index: 2;
+.powerWords {
+  font-size: 300%;
+  color: red;
+  text-shadow: 2px 2px 5px #cc0000;
 }
 
-#powerWords {
-  color: red;
-  font-size: 300%;
-  z-index: 3;
-  text-align: center;
+.galleryImg {
+  height: 30rem;
+  width: 20rem;
+  border-radius: 10px;
 }
