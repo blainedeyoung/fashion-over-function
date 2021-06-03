@@ -8,9 +8,20 @@
 // 4. Include any optional Bootstrap components as you like
 @import "optionalBootstrapComponents";
 // 5. Add additional custom code here
+@import "jsAppliedClasses";
+@import "mixins";
 
 body {
   overflow-x: hidden;
+}
+
+.navbar {
+  @include backgroundGradient;
+  height: 10vh;
+  & .navbar-brand {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 400%;
+  }
 }
 
 #advSearchBtn {
@@ -18,21 +29,37 @@ body {
 }
 
 #mainTopSection {
-  min-height: 95vh;
+  min-height: 90vh;
 }
 
 #westWall {
+  @include walls;
   background-image: url(../images/westWallFloralPattern.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 20%;
 }
 
 #eastWall {
+  @include walls;
   background-image: url(../images/eastWallFloralPattern.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 20%;
+}
+
+h4 {
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  font-size: 300%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a {
+  color: black !important;
+  text-decoration: underline !important;
+  &:hover {
+    background-color: orange;
+  }
 }
 
 .listBreaker {
@@ -56,12 +83,35 @@ body {
   font-size: 300%;
   color: red;
   text-shadow: 2px 2px 5px #cc0000;
+  font-family: 'Permanent Marker', sans-serif;
 }
 
 .galleryImg {
   height: 30rem;
   width: 20rem;
   border-radius: 10px;
+}
+
+#footerContainer {
+  @include backgroundGradient;
+  color: white;
+  font-size: 75%;
+  & h5 {
+    align-self: flex-start;
+  }
+}
+
+i {
+  margin: 20px;
+  font-size: 400%;
+  &:hover {
+    color: blue;
+  }
+}
+
+.aboutPanel {
+  min-height: 9rem;
+  background-color: #D0D5DB;
 }
 
 @import "breakpoints";

@@ -6,10 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>fashion-over-function</title>
   <link rel="stylesheet" type="text/css" title="styles.css" href="css/styles.css">
+  <!-- use google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Euphoria+Script&family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark min-vw-100">
+  <header class="navbar navbar-expand-lg navbar-dark min-vw-100">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Fashion / Function</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavLinks" aria-controls="topNavLinks" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,46 +40,45 @@
         </form>
       </div>
     </div>
-  </nav>
+  </header>
   <div class="container-fluid d-flex flex-row min-vw-100 g-0" id="mainTopSection">
-    <ul class="nav flex-column align-items-center pt-5" id="westWall">
-      <h5>Men's</h5>
-      <div class="listBreaker">
-      <li class="list-item pt-4">
-        <a href="#">Suits</a>
-      </li>
-      <li class="list-item pt-4">
-        <a href="#">Hats</a>
-      </li>
-      <li class="list-item pt-4">
-        <a href="#">Overcoats</a>
-      </li>
-      <li class="list-item pt-4">
-        <a href="#">Jackets</a>
-      </li>
-      <li class="list-item pt-4">
-        <a href="#">Shirts</a>
-      </li>
-      </div>
-      <div class="listBreaker">
-      <li class="list-item pt-4">
-        <a href="#">Belts</a>
-      </li>
-      <li class="list-item pt-4">
-        <a href="#">Trousers</a>
-      </li>
-      <li class="list-item pt-4">
-        <a href="#">Shoes</a>
-      </li>
-      <li class="list-item pt-4">
-        <a href="#">Undergarments</a>
-      </li>
-      <li class="list-item pt-4">
-        <a href="#">Accessories</a>
-      </li>
-      </div>
-    </ul>
-    <div class="container d-flex flex-column justify-content-center align-items-center g-0">
+    <nav class="d-flex flex-column align-items-center" id="westWall">
+      <h4 class="pt-5">Men's</h4>
+      <ul class="nav flex-column align-items-center" id="westWallMenu">
+        <div class="listBreaker">
+          <li class="list-item pt-4">
+            <a href="#">Suits</a>
+          </li>
+          <li class="list-item pt-4">
+            <a href="#">Hats</a>
+          </li>
+          <li class="list-item pt-4">
+            <a href="#">Overcoats</a>
+          </li>
+          <li class="list-item pt-4">
+            <a href="#">Jackets</a>
+          </li>
+        </div>
+        <div class="listBreaker">
+          <li class="list-item pt-4">
+            <a href="#">Shirts</a>
+          </li>
+          <li class="list-item pt-4">
+            <a href="#">Trousers</a>
+          </li>
+          <li class="list-item pt-4">
+            <a href="#">Shoes</a>
+          </li>
+          <li class="list-item pt-4">
+            <a href="#">Undergarments</a>
+          </li>
+          <li class="list-item pt-4">
+            <a href="#">Accessories</a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <div class="container d-flex flex-column justify-content-center align-items-center g-0" id="centerImages">
       <img src="images/fancyFringe.svg" alt="" id="fringe" />
       <div class="carousel slide position-absolute" id="imageBox" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -89,42 +91,54 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <a data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Photo by <a target='_blank' href='https://unsplash.com/@yogendras31?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Yogendra Singh</a> on <a target='_blank' href='https://unsplash.com/s/photos/fashion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"><img class="centerImage" id="unsplash1" src="images/unsplash1.jpg" alt="" /></a>
+            <a data-bs-toggle="popover"
+              data-bs-content="<p>Photo by <a target='_blank' href='https://unsplash.com/@yogendras31?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Yogendra Singh</a> on <a target='_blank' href='https://unsplash.com/s/photos/fashion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>"><img
+                class="centerImage" id="unsplash1" src="images/unsplash1.jpg" alt="" /></a>
             <div class="carousel-caption d-none d-md-block">
               <h5 class="powerWords">Elegant</h5>
             </div>
           </div>
           <!-- Photo by <a href="https://unsplash.com/@yogendras31?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yogendra Singh</a> on <a href="https://unsplash.com/s/photos/fashion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
           <div class="carousel-item">
-            <a data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Photo by <a target='_blank' href='https://unsplash.com/@armarzze?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Barry Fitzsimmons</a> on <a href='https://unsplash.com/s/photos/woman-suit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"> <img class="centerImage" src="images/unsplash2.jpg" id="unsplash2" alt="" /></a>
+            <a data-bs-toggle="popover"
+              data-bs-content="<p>Photo by <a target='_blank' href='https://unsplash.com/@armarzze?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Barry Fitzsimmons</a> on <a target='_blank' href='https://unsplash.com/s/photos/woman-suit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>">
+              <img class="centerImage" src="images/unsplash2.jpg" id="unsplash2" alt="" /></a>
             <div class="carousel-caption d-none d-md-block">
               <h5 class="powerWords">Professional</h5>
             </div>
           </div>
           <!-- Photo by <a href="https://unsplash.com/@armarzze?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Barry Fitzsimmons</a> on <a href="https://unsplash.com/s/photos/woman-suit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
           <div class="carousel-item">
-            <a data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Photo by <a target='_blank' href='https://unsplash.com/@armedshutter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Ayo Ogunseinde</a> on <a target='_blank' href='https://unsplash.com/s/photos/men-fashion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"><img class="centerImage" src="images/unsplash3.jpg" id="unsplash3" alt="" /></a>
+            <a data-bs-toggle="popover"
+              data-bs-content="<p>Photo by <a target='_blank' href='https://unsplash.com/@armedshutter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Ayo Ogunseinde</a> on <a target='_blank' href='https://unsplash.com/s/photos/men-fashion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>"><img
+                class="centerImage" src="images/unsplash3.jpg" id="unsplash3" alt="" /></a>
             <div class="carousel-caption d-none d-md-block">
               <h5 class="powerWords">Sharp</h5>
             </div>
           </div>
           <!-- Photo by <a href="https://unsplash.com/@armedshutter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ayo Ogunseinde</a> on <a href="https://unsplash.com/s/photos/men-fashion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
           <div class="carousel-item">
-            <a data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Photo by <a target='_blank' href='https://unsplash.com/@fedotov_vs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Vladimir Fedotov</a> on <a target='_blank' href='https://unsplash.com/s/photos/fashion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"><img class="centerImage" src="images/unsplash4.jpg" id="unsplash4" alt="" /></a>
+            <a data-bs-toggle="popover"
+              data-bs-content="<p>Photo by <a target='_blank' href='https://unsplash.com/@fedotov_vs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Vladimir Fedotov</a> on <a target='_blank' href='https://unsplash.com/s/photos/fashion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>"><img
+                class="centerImage" src="images/unsplash4.jpg" id="unsplash4" alt="" /></a>
             <div class="carousel-caption d-none d-md-block">
               <h5 class="powerWords">Sensual</h5>
             </div>
           </div>
           <!-- Photo by <a href="https://unsplash.com/@fedotov_vs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vladimir Fedotov</a> on <a href="https://unsplash.com/s/photos/fashion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
           <div class="carousel-item">
-            <a data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Photo by <a target='_blank' href='https://unsplash.com/@elidefaria?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Eli DeFaria</a> on <a target='_blank' href='https://unsplash.com/s/photos/fashion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"><img class="centerImage" src="images/unsplash5.jpg" id="unsplash5" alt="" /></a>
+            <a data-bs-toggle="popover"
+              data-bs-content="<p>Photo by <a target='_blank' href='https://unsplash.com/@elidefaria?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Eli DeFaria</a> on <a target='_blank' href='https://unsplash.com/s/photos/fashion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>"><img
+                class="centerImage" src="images/unsplash5.jpg" id="unsplash5" alt="" /></a>
             <div class="carousel-caption d-none d-md-block">
               <h5 class="powerWords">Fun</h5>
             </div>
           </div>
           <!-- Photo by <a href="https://unsplash.com/@elidefaria?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eli DeFaria</a> on <a href="https://unsplash.com/s/photos/fashion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
           <div class="carousel-item">
-            <a data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Photo by <a target='_blank' href='https://unsplash.com/@rexwaygallery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>REX WAY</a> on <a target='_blank' href='https://unsplash.com/s/photos/fashion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"><img class="centerImage" src="images/unsplash6.jpg" id="unsplash6" alt="" /></a>
+            <a data-bs-toggle="popover"
+              data-bs-content="<p>Photo by <a target='_blank' href='https://unsplash.com/@rexwaygallery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>REX WAY</a> on <a target='_blank' href='https://unsplash.com/s/photos/fashion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>"><img
+                class="centerImage" src="images/unsplash6.jpg" id="unsplash6" alt="" /></a>
             <div class="carousel-caption d-none d-md-block">
               <h5 class="powerWords">Classic</h5>
             </div>
@@ -141,43 +155,47 @@
         </button>
       </div>
     </div>
-    <ul class="nav flex-column align-items-center pt-5" id="eastWall">
-      <h5>Women's</h5>
-      <div class="listBreaker">
-      <li class="list-item pt-4">
-        <a href="#">Dresses</a>
-      </li>
-      <li class="list-item pt-4">
-        <a href="#">Hats</a>
-      </li>
-      <li class="list-item pt-4">
-        <a href="#">Overcoats</a>
-      </li>
-      <li class="list-item pt-4">
-        <a href="#">Blouses</a>
-      </li>
-      </div>
-      <div class="listBreaker">
-      <li class="list-item pt-4">
-        <a href="#">Skirts</a>
-      </li>
-      <li class="list-item pt-4">
-        <a href="#">Shoes</a>
-      </li>
-      <li class="list-item pt-4">
-        <a href="#">Undergarments</a>
-      </li>
-      <li class="list-item pt-4">
-        <a href="#">Accessories</a>
-      </li>
-      </div>
-    </ul>
+    <nav class="d-flex flex-column align-items-center" id="eastWall">
+      <h4 class="pt-5">Women's</h4>
+      <ul class="nav flex-column align-items-center" id="eastWallMenu">
+        <div class="listBreaker">
+          <li class="list-item pt-4">
+            <a href="#">Dresses</a>
+          </li>
+          <li class="list-item pt-4">
+            <a href="#">Hats</a>
+          </li>
+          <li class="list-item pt-4">
+            <a href="#">Overcoats</a>
+          </li>
+          <li class="list-item pt-4">
+            <a href="#">Blouses</a>
+          </li>
+        </div>
+        <div class="listBreaker">
+          <li class="list-item pt-4">
+            <a href="#">Skirts</a>
+          </li>
+          <li class="list-item pt-4">
+            <a href="#">Shoes</a>
+          </li>
+          <li class="list-item pt-4">
+            <a href="#">Undergarments</a>
+          </li>
+          <li class="list-item pt-4">
+            <a href="#">Accessories</a>
+          </li>
+        </div>
+      </ul>
+    </nav>
   </div>
-  <div class="container-fluid mt-5 g-0">
+  <div class="container-fluid mt-5 g-0" id="gallery">
     <div class="row">
       <div class="col-xxl-3 col-lg-4 col-md-6 g-0 d-flex flex-column align-items-center justify-content-center">
         <!-- I tried to make these cards but for some reason that left dark dots at the corners of the cards -->
-        <a data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Photo by <a target='_blank' href='https://unsplash.com/@alipzn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Ali Pazani</a> on <a target='_blank' href='https://unsplash.com/s/photos/clothing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"><img class="galleryImg" src="galleryImages/ali-pazani-unsplash.jpg" alt="" /></a>
+        <a data-bs-toggle="popover"
+          data-bs-content="<p>Photo by <a target='_blank' href='https://unsplash.com/@alipzn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Ali Pazani</a> on <a target='_blank' href='https://unsplash.com/s/photos/clothing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>"><img
+            class="galleryImg" src="galleryImages/ali-pazani-unsplash.jpg" alt="" /></a>
         <h5 class="mt-2">
           Hat
         </h5>
@@ -186,7 +204,9 @@
         </p>
       </div>
       <div class="col-xxl-3 col-lg-4 col-md-6 g-0 d-flex flex-column align-items-center justify-content-center">
-        <a data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Photo by <a target='_blank' href='https://unsplash.com/@aniitonishvili?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Ali Pazani</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"><img class="galleryImg" src="galleryImages/ana-itonishvili-unsplash.jpg" alt="" /></a>
+        <a data-bs-toggle="popover"
+          data-bs-content="<p>Photo by <a target='_blank' href='https://unsplash.com/@aniitonishvili?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Ali Pazani</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>"><img
+            class="galleryImg" src="galleryImages/ana-itonishvili-unsplash.jpg" alt="" /></a>
         <h5 class="mt-2">
           Skirt
         </h5>
@@ -195,7 +215,9 @@
         </p>
       </div>
       <div class="col-xxl-3 col-lg-4 col-md-6 g-0 d-flex flex-column align-items-center justify-content-center">
-        <a data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Photo by <a target='_blank' href='https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Ana Itonishvili</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"><img class="galleryImg" src="galleryImages/christina-wocintechchat-com-unsplash.jpg" alt="" /></a>
+        <a data-bs-toggle="popover"
+          data-bs-content="<p>Photo by <a target='_blank' href='https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Ana Itonishvili</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>"><img
+            class="galleryImg" src="galleryImages/christina-wocintechchat-com-unsplash.jpg" alt="" /></a>
         <h5 class="mt-2">
           Jacket
         </h5>
@@ -204,7 +226,9 @@
         </p>
       </div>
       <div class="col-xxl-3 col-lg-4 col-md-6 g-0 d-flex flex-column align-items-center justify-content-center">
-        <a data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Photo by <a target='_blank' href='https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Christina @ wocintechchat.com</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"><img class="galleryImg" src="galleryImages/christina-wocintechchat-com-unsplash2.jpg" alt="" /></a>
+        <a data-bs-toggle="popover"
+          data-bs-content="<p>Photo by <a target='_blank' href='https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Christina @ wocintechchat.com</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>"><img
+            class="galleryImg" src="galleryImages/christina-wocintechchat-com-unsplash2.jpg" alt="" /></a>
         <h5 class="mt-2">
           Boots
         </h5>
@@ -212,79 +236,317 @@
           $200
         </p>
       </div>
-    <div class="col-xxl-3 col-lg-4 col-md-6 g-0 d-flex flex-column align-items-center justify-content-center">
-      <a data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Photo by <a target='_blank' href='https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Christina @ wocintechchat.com</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"><img class="galleryImg" src="galleryImages/christina-wocintechchat-com-unsplash3.jpg" alt="" /></a>
-      <h5 cla Jacket </h5>
+      <div class="col-xxl-3 col-lg-4 col-md-6 g-0 d-flex flex-column align-items-center justify-content-center">
+        <a data-bs-toggle="popover"
+          data-bs-content="<p>Photo by <a target='_blank' href='https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Christina @ wocintechchat.com</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>"><img
+            class="galleryImg" src="galleryImages/christina-wocintechchat-com-unsplash3.jpg" alt="" /></a>
+        <h5 class="mt-2">
+           Jacket
+         </h5>
+          <p class="mt-2">
+            $100
+          </p>
+      </div>
+      <div class="col-xxl-3 col-lg-4 col-md-6 g-0 d-flex flex-column align-items-center justify-content-center">
+        <a data-bs-toggle="popover"
+          data-bs-content="<p>Photo by <a target='_blank' href='https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Christina @ wocintechchat.com</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>"><img
+            class="galleryImg" src="galleryImages/christina-wocintechchat-com-unsplash4.jpg" alt="" /></a>
+        <h5 class="mt-2">
+          Jacket
+        </h5>
         <p class="mt-2">
-          $100
+          $150
         </p>
-    </div>
-    <div class="col-xxl-3 col-lg-4 col-md-6 g-0 d-flex flex-column align-items-center justify-content-center">
-      <a data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Photo by <a target='_blank' href='https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Christina @ wocintechchat.com</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"><img class="galleryImg" src="galleryImages/christina-wocintechchat-com-unsplash4.jpg" alt="" /></a>
-      <h5 class="mt-2">
-        Jacket
-      </h5>
-      <p class="mt-2">
-        $150
-      </p>
-    </div>
-    <div class="col-xxl-3 col-lg-4 col-md-6 g-0 d-flex flex-column align-items-center justify-content-center">
-      <a data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Photo by <a target='_blank' href='https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Christina @ wocintechchat.com</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"><img class="galleryImg" src="galleryImages/christina-wocintechchat-com-unsplash5.jpg" alt="" /></a>
-      <h5 class="mt-2">
-        Blouse
-      </h5>
-      <p class="mt-2">
-        $50
-      </p>
-    </div>
-    <div class="col-xxl-3 col-lg-4 col-md-6 g-0 d-flex flex-column align-items-center justify-content-center">
-      <a data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Photo by <a target='_blank' href='https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Christina @ wocintechchat.com</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"><img class="galleryImg" src="galleryImages/christina-wocintechchat-com-unsplash6.jpg" alt="" /></a>
-      <h5 class="mt-2">
-        Jacket
-      </h5>
-      <p class="mt-2">
-        $200
-      </p>
-    </div>
-    <div class="col-xxl-3 col-lg-4 col-md-6 g-0 d-flex flex-column align-items-center justify-content-center">
-      <a data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Photo by <a target='_blank' href='https://unsplash.com/@ussamaazam?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Ussama Azam</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"><img class="galleryImg" src="galleryImages/ussama-azam-unsplash.jpg" alt="" /></a>
-      <h5 class="mt-2">
-        Dress
-      </h5>
-      <p class="mt-2">
-        $150
-      </p>
-    </div>
-    <div class="col-xxl-3 col-lg-4 col-md-6 g-0 d-flex flex-column align-items-center justify-content-center">
-      <a data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Photo by <a target='_blank' href='https://unsplash.com/@liferondeau?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Joshua Rondeau</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"><img class="galleryImg" src="galleryImages/joshua-rondeau-unsplash.jpg" alt="" /></a>
-      <h5 class="mt-2">
-        Pants
-      </h5>
-      <p class="mt-2">
-        $75
-      </p>
-    </div>
-    <div class="col-xxl-3 col-lg-4 col-md-6 g-0 d-flex flex-column align-items-center justify-content-center">
-      <a data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Photo by <a target='_blank' href='https://unsplash.com/@liferondeau?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Joshua Rondeau</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"><img class="galleryImg" src="galleryImages/joshua-rondeau-unsplash2.jpg" alt="" /></a>
-      <h5 class="mt-2">
-        Necklace
-      </h5>
-      <p class="mt-2">
-        $250
-      </p>
-    </div>
-    <div class="col-xxl-3 col-lg-4 col-md-6 g-0 d-flex flex-column align-items-center justify-content-center">
-      <a data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Photo by <a target='_blank' href='https://unsplash.com/@ussamaazam?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Mahdi Bafande</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"><img class="galleryImg" src="galleryImages/mahdi-bafande-unsplash.jpg" alt="" /></a>
-      <h5 class="mt-2">
-        Overcoat
-      </h5>
-      <p class="mt-2">
-        $175
-      </p>
+      </div>
+      <div class="col-xxl-3 col-lg-4 col-md-6 g-0 d-flex flex-column align-items-center justify-content-center">
+        <a data-bs-toggle="popover"
+          data-bs-content="<p>Photo by <a target='_blank' href='https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Christina @ wocintechchat.com</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>"><img
+            class="galleryImg" src="galleryImages/christina-wocintechchat-com-unsplash5.jpg" alt="" /></a>
+        <h5 class="mt-2">
+          Blouse
+        </h5>
+        <p class="mt-2">
+          $50
+        </p>
+      </div>
+      <div class="col-xxl-3 col-lg-4 col-md-6 g-0 d-flex flex-column align-items-center justify-content-center">
+        <a data-bs-toggle="popover"
+          data-bs-content="<p>Photo by <a target='_blank' href='https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Christina @ wocintechchat.com</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>"><img
+            class="galleryImg" src="galleryImages/christina-wocintechchat-com-unsplash6.jpg" alt="" /></a>
+        <h5 class="mt-2">
+          Jacket
+        </h5>
+        <p class="mt-2">
+          $200
+        </p>
+      </div>
+      <div class="col-xxl-3 col-lg-4 col-md-6 g-0 d-flex flex-column align-items-center justify-content-center">
+        <a data-bs-toggle="popover"
+          data-bs-content="<p>Photo by <a target='_blank' href='https://unsplash.com/@ussamaazam?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Ussama Azam</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>"><img
+            class="galleryImg" src="galleryImages/ussama-azam-unsplash.jpg" alt="" /></a>
+        <h5 class="mt-2">
+          Dress
+        </h5>
+        <p class="mt-2">
+          $150
+        </p>
+      </div>
+      <div class="col-xxl-3 col-lg-4 col-md-6 g-0 d-flex flex-column align-items-center justify-content-center">
+        <a data-bs-toggle="popover"
+          data-bs-content="<p>Photo by <a target='_blank' href='https://unsplash.com/@liferondeau?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Joshua Rondeau</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>"><img
+            class="galleryImg" src="galleryImages/joshua-rondeau-unsplash.jpg" alt="" /></a>
+        <h5 class="mt-2">
+          Pants
+        </h5>
+        <p class="mt-2">
+          $75
+        </p>
+      </div>
+      <div class="col-xxl-3 col-lg-4 col-md-6 g-0 d-flex flex-column align-items-center justify-content-center">
+        <a data-bs-toggle="popover"
+          data-bs-content="<p>Photo by <a target='_blank' href='https://unsplash.com/@liferondeau?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Joshua Rondeau</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>"><img
+            class="galleryImg" src="galleryImages/joshua-rondeau-unsplash2.jpg" alt="" /></a>
+        <h5 class="mt-2">
+          Necklace
+        </h5>
+        <p class="mt-2">
+          $250
+        </p>
+      </div>
+      <div class="col-xxl-3 col-lg-4 col-md-6 g-0 d-flex flex-column align-items-center justify-content-center">
+        <a data-bs-toggle="popover"
+          data-bs-content="<p>Photo by <a target='_blank' href='https://unsplash.com/@ussamaazam?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Mahdi Bafande</a> on <a target='_blank' href='https://unsplash.com/s/photos/designer-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>"><img
+            class="galleryImg" src="galleryImages/mahdi-bafande-unsplash.jpg" alt="" /></a>
+        <h5 class="mt-2">
+          Overcoat
+        </h5>
+        <p class="mt-2">
+          $175
+        </p>
+      </div>
     </div>
   </div>
+  <footer id="footerContainer">
+    <div class="container-fluid g-0 d-flex flex-row justify-content-around h-25 px-5 pt-5">
+    <nav class="nav d-flex flex-column align-items-center">
+      <h5 class="pt-3">Site Map</h5>
+      <ul class="nav flex-column pt-1">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Function / Fashion</a>
+        </li>
+        <li>
+          <a href="#">Account</a>
+        </li>
+        <li>
+          <a href="#">Wishlist</a>
+        </li>
+        <li>
+          <a href="#">Shopping Cart</a>
+        </li>
+        <li>
+          <a href="#">Search Catalogue</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="nav d-flex flex-column align-items-center">
+      <h5 class="pt-3">Divisions</h5>
+      <ul class="nav flex-column pt-1">
+        <li>
+          <a href="#">Function/Fashion</a>
+        </li>
+        <li>
+          <a href="#">Men's</a>
+        </li>
+        <li>
+          <a href="#">Women's</a>
+        </li>
+        <li>
+          <a href="#">Children's</a>
+        </li>
+        <li>
+          <a href="#">Fashion</a>
+        </li>
+        <li>
+          <a href="#">Work</a>
+        </li>
+        <li>
+          <a href="#">Casual</a>
+        </li>
+        <li>
+          <a href="#">Sporting</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="nav d-flex flex-column align-items-center">
+      <h5 class="pt-3">Clothing Departments</h5>
+      <ul class="nav flex-column pt-1">
+        <li>
+          <a href="#">Hats</a>
+        </li>
+        <li>
+          <a href="#">Overcoats</a>
+        </li>
+        <li>
+          <a href="#">Jackets</a>
+        </li>
+        <li>
+          <a href="#">Dresses</a>
+        </li>
+        <li>
+          <a href="#">Blouses</a>
+        </li>
+        <li>
+          <a href="#">Shirts</a>
+        </li>
+        <li>
+          <a href="#">Trousers</a>
+        </li>
+        <li>
+          <a href="#">Skirts</a>
+        </li>
+        <li>
+          <a href="#">Shoes</a>
+        </li>
+        <li>
+          <a href="#">Undergarments</a>
+        </li>
+        <li>
+          <a href="#">Accessories</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="nav d-flex flex-column align-items-center">
+      <h5 class="pt-3">Corporate Departments</h5>
+      <ul class="nav flex-column pt-1">
+        <li>
+          <a href="#">Customer Service</a>
+        </li>
+        <li>
+          <a href="#">Career Opportunities</a>
+        </li>
+        <li>
+          <a href="#">Web Master</a>
+        </li>
+        <li>
+          <a href="#">Human Resources</a>
+        </li>
+        <li>
+          <a href="#">Fulfilment</a>
+        </li>
+        <li>
+          <a href="#">Sales</a>
+        </li>
+        <li>
+          <a href="#">Finance</a>
+        </li>
+        <li>
+          <a href="#">Marketing</a>
+        </li>
+        <li>
+          <a href="#">Purchasing</a>
+        </li>
+        <li>
+          <a href="#">Operations</a>
+        </li>
+        <li>
+          <a href="#">Management</a>
+        </li>
+    </nav>
+    <nav class="nav d-flex flex-column align-items-center">
+      <h5 class="pt-3">Bears</h5>
+      <ul class="nav flex-column pt-1">
+        <li>
+          <a href="#">Polar</a>
+        </li>
+        <li>
+          <a href="#">Grizzly</a>
+        </li>
+        <li>
+          <a href="#">Brown</a>
+        </li>
+        <li>
+          <a href="#">Black</a>
+        </li>
+        <li>
+          <a href="#">Panda</a>
+        </li>
+        <li>
+          <a href="#">Koala</a>
+        </li>
+        <li>
+          <a href="#">Teddy</a>
+        </li>
+        <li>
+          <a href="#">Gummy</a>
+        </li>
+        <li>
+          <a href="#">Care</a>
+        </li>
+        <li>
+          <a href="#" data-bs-toggle="tooltip" title="google it">Water</a>
+        </li>
+    </nav>
+    <nav class="nav d-flex flex-column align-items-center">
+      <h5 class="pt-3">Dragons</h5>
+      <ul class="nav flex-column pt-1">
+        <li>
+          <a href="#">Metallic</a>
+        </li>
+        <li>
+          <a href="#">Chromatic</a>
+        </li>
+        <li>
+          <a href="#">Gem</a>
+        </li>
+        <li>
+          <a href="#">Planar</a>
+        </li>
+        <li>
+          <a href="#">Celestial</a>
+        </li>
+        <li>
+          <a href="#">Miscellaneous True</a>
+        </li>
+        <li>
+          <a href="#">Drakes</a>
+        </li>
+        <li>
+          <a href="#">Dragonkin</a>
+        </li>
+        <li>
+          <a href="#">Wyverns</a>
+        </li>
+        <li>
+          <a href="#">Hydras</a>
+        </li>
+        <li>
+          <a href="#">Sea Serpents</a>
+        </li>
+        <li>
+          <a href="#">Turtles</a>
+        </li>
+    </nav>
+    </div>
+    <div class="d-flex flex-row w-100 p-2 align-items-center justify-content-center">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-discord"></i>
+      <i class="fab fa-reddit"></i>
+    </div>
+  </footer>
+  <div class="d-flex align-items-center justify-content-center g-0 aboutPanel">
+    <p class="p-5">
+      As noted in the gallery, this site is a mock-up, a front-end stub.  The CSS is themed Bootstrap 5.0.1.  I made the crest around the carousel myself in inkscape.  The flower images in the sidebars came from <a href="canva.com" target="_blank">canva.com</a>.  Hopefully, you noticed that all of the photos on this page have linked popovers which give just credit to the good folks at <a href="unsplash.com" target="_blank">unsplash.com</a>.  If this were an actual working website, I'd replace those popovers with links to product pages.  The code for this site is available on <a href="https://github.com/blainedeyoung/fashion-over-function" target="_blank">github</a>.  I hope you enjoyed the show.  This link will take you back to the <a href="blainedeyoung.com/gallery">gallery</a>.  May Shai-Hulud clear the path before you.
+    </p>
   </div>
-
+  
+  <!-- Fontawesome icons -->
+  <script src="https://kit.fontawesome.com/758873896e.js" crossorigin="anonymous"></script>
+  <!-- bootstrap full bundle -->
   <script src="../bootstrap-5.0.1//dist/js/bootstrap.bundle.min.js"></script>
   <script src="app.js" type="text/javascript"></script>
 </body>
