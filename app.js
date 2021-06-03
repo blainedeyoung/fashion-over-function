@@ -13,8 +13,8 @@
 //this script will initialize popovers
 //you can use basically this same script initialize tooltips
 //just by replacing 'popover' with 'tooltip'
-// const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover-hover"]'));
-// const popoverList = popoverTriggerList.map((popoverTriggerEl) => {
-//   return new bootstrap.Popover(popoverTriggerEl)
-// });
+const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+const popoverList = popoverTriggerList.map((popoverTriggerEl) => {
+  return new bootstrap.Popover(popoverTriggerEl, {html: true, container: "body"})
+});
 

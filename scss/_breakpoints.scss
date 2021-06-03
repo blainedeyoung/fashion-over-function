@@ -1,0 +1,139 @@
+@media all and (max-width: 115em) {
+#fringe {
+  height: 48rem;
+  width: 72rem;
+}
+
+.centerImage, #imageBox {
+  height: 26rem;
+  width: 39rem;
+}
+}
+
+@media all and (max-width: 107em) {
+#fringe {
+  height: 44rem;
+  width: 66rem;
+}
+
+.centerImage, #imageBox {
+  height: 22rem;
+  width: 33rem;
+}
+}
+
+@media all and (max-width: 100em) {
+#fringe {
+  height: 42rem;
+  width: 63rem;
+}
+
+.centerImage, #imageBox {
+  height: 20rem;
+  width: 30rem;
+}
+}
+
+@media all and (max-width: 92em) {
+#fringe {
+  height: 40rem;
+  width: 60rem;
+}
+
+.centerImage, #imageBox {
+  height: 18rem;
+  width: 27rem;
+}
+}
+
+@media all and (max-width: 82em) {
+#fringe {
+  height: 38rem;
+  width: 47rem;
+}
+
+.centerImage, #imageBox {
+  height: 16rem;
+  width: 24rem;
+}
+
+#westWall, #eastWall {
+  width: 10%;
+  font-size: 12px;
+}
+}
+
+@media all and (max-width: 75em) {
+#mainTopSection {
+  flex-direction: column !important;
+}
+
+#westWall {
+  background-image: url(../images/westWallFloralPatternHorizontal.svg);
+}
+
+#eastWall {
+  background-image: url(../images/eastWallFloralPatternHorizontal.svg);
+}
+
+#westWall, #eastWall {
+  flex-direction: row !important;
+  justify-content: space-around;
+  width: 100%;
+  height: 10%;
+  font-size: 16px;
+  padding-bottom: 3rem;
+}
+
+.listBreaker {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+}
+
+@media all and (max-width: 63em) {
+  #westWall, #eastWall {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 58em) {
+  #fringe {
+    height: 34rem;
+    width: 51rem;
+  }
+  
+  .centerImage, #imageBox {
+    height: 12rem;
+    width: 18rem;
+  }
+  
+  .powerWords {
+    font-size: 200%;
+  }
+}
+
+@media all and (max-width: 50em) {
+  #fringe {
+    height: 20rem;
+    width: 30rem;
+  }
+  
+  .centerImage, #imageBox {
+    height: 10rem;
+    width: 15rem;
+  }
+}
+
+@media all and (max-width: 48em) {
+  #fringe {
+    height: 18rem;
+    width: 27rem;
+  }
+  
+  .centerImage, #imageBox {
+    height: 8rem;
+    width: 12rem;
+  }
+}
