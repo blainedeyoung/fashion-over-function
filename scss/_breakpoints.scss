@@ -164,3 +164,19 @@
     font-size: 50%;
   }
 }
+
+@media all and (max-width: 30em) {
+  .navbar-brand {
+    font-size: 200%;
+  }
+  
+  #fringe {
+    height: 16rem;
+    width: 24rem;
+  }
+  
+  .centerImage, #imageBox {
+    height: 6rem;
+    width: 9rem;
+  }
+}
