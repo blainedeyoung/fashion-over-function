@@ -7106,7 +7106,7 @@ progress {
   .d-print-none {
     display: none !important; } }
 .expanded {
-  min-height: 50vh !important; }
+  min-height: 60vh !important; }
 
 body {
   overflow-x: hidden; }
@@ -7339,6 +7339,9 @@ i {
   #footerContainer {
     font-size: 50%; } }
 @media all and (max-width: 30em) {
+  .navbar {
+    height: 25vh; }
+
   .navbar-brand {
     font-size: 200%; }
 
