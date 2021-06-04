@@ -7349,10 +7349,6 @@ i {
     height: 16rem;
     width: 24rem; }
 
-  .centerImage, #imageBox {
-    height: 6rem;
-    width: 9rem; }
-
   #advSearchBtn {
-    display: block;
+    display: block !important;
     width: 25%; } }
