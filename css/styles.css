@@ -7292,7 +7292,8 @@ i {
     height: 20vh; }
 
   #advSearchBtn {
-    margin-top: 10px; }
+    margin-top: 10px;
+    margin-left: 0 !important; }
 
   #footerInnerWrapper {
     -webkit-box-orient: vertical !important;
