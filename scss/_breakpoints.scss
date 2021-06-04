@@ -107,6 +107,14 @@
   #advSearchBtn {
     width: 50%;
   }
+  
+  #footerInnerWrapper {
+    flex-direction: column !important;
+  }
+  
+  .footerMenuGrouper {
+    width: 100% !important;
+  }
 }
 
 @media all and (max-width: 58em) {
@@ -123,14 +131,6 @@
   .powerWords {
     font-size: 200%;
   }
-  
-  #footerInnerWrapper {
-    flex-direction: column !important;
-  }
-  
-  .footerMenuGrouper {
-    width: 100% !important;
-  }
 }
 
 @media all and (max-width: 50em) {
@@ -146,6 +146,10 @@
 }
 
 @media all and (max-width: 48em) {
+  .navbar-brand {
+    font-size: 300% !important;
+  }
+  
   #fringe {
     height: 18rem;
     width: 27rem;
