@@ -167,7 +167,7 @@
 
 @media all and (max-width: 30em) {
   .navbar {
-    height: 25vh; 
+    height: 25vh;
   }
   
   .navbar-brand {
@@ -182,5 +182,10 @@
   .centerImage, #imageBox {
     height: 6rem;
     width: 9rem;
+  }
+  
+  #advSearchBtn {
+    display: block;
+    width: 25%;
   }
 }

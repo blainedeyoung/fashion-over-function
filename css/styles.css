@@ -7351,4 +7351,8 @@ i {
 
   .centerImage, #imageBox {
     height: 6rem;
-    width: 9rem; } }
+    width: 9rem; }
+
+  #advSearchBtn {
+    display: block;
+    width: 25%; } }
