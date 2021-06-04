@@ -1,13 +1,9 @@
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "../../bootstrap-5.0.1/scss/functions";
-// 2. Include any default variable overrides here
-@import "variables";
-// 3. Include remainder of required Bootstrap stylesheets
+@import "../../bootstrap-5.0.1/scss/functions"; // 2. Include any default variable overrides here
+@import "variables"; // 3. Include remainder of required Bootstrap stylesheets
 @import "../../bootstrap-5.0.1/scss/mixins";
-@import "../../bootstrap-5.0.1/scss/variables";
-// 4. Include any optional Bootstrap components as you like
-@import "optionalBootstrapComponents";
-// 5. Add additional custom code here
+@import "../../bootstrap-5.0.1/scss/variables"; // 4. Include any optional Bootstrap components as you like
+@import "optionalBootstrapComponents"; // 5. Add additional custom code here
 @import "jsAppliedClasses";
 @import "mixins";
 
@@ -18,6 +14,7 @@ body {
 .navbar {
   @include backgroundGradient;
   height: 10vh;
+
   & .navbar-brand {
     font-family: 'Euphoria Script', cursive;
     font-size: 400%;
@@ -30,12 +27,12 @@ body {
 
 #westWall {
   @include walls;
-  background-image: url(../images/westWallFloralPattern.svg);
+  background-image: url("../images/westWallFloralPattern.svg");
 }
 
 #eastWall {
   @include walls;
-  background-image: url(../images/eastWallFloralPattern.svg);
+  background-image: url("../images/eastWallFloralPattern.svg");
 }
 
 h4 {
@@ -53,6 +50,7 @@ a {
 p a {
   color: black !important;
   text-decoration: underline !important;
+
   &:hover {
     background-color: orange;
   }
@@ -70,7 +68,8 @@ p a {
   width: 75rem;
 }
 
-.centerImage, #imageBox {
+#imageBox,
+.centerImage {
   height: 28rem;
   width: 42rem;
 }
@@ -92,6 +91,7 @@ p a {
   @include backgroundGradient;
   color: white;
   font-size: 75%;
+
   & h5 {
     align-self: flex-start;
   }
@@ -100,6 +100,7 @@ p a {
 i {
   margin: 20px;
   font-size: 400%;
+
   &:hover {
     color: blue;
   }
@@ -109,5 +110,4 @@ i {
   min-height: 9rem;
   background-color: #D0D5DB;
 }
-
 @import "breakpoints";

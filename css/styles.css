@@ -7127,14 +7127,14 @@ body {
   background-repeat: no-repeat;
   width: 20%;
   text-shadow: 2px 2px 5px black;
-  background-image: url(../images/westWallFloralPattern.svg); }
+  background-image: url("../images/westWallFloralPattern.svg"); }
 
 #eastWall {
   background-size: cover;
   background-repeat: no-repeat;
   width: 20%;
   text-shadow: 2px 2px 5px black;
-  background-image: url(../images/eastWallFloralPattern.svg); }
+  background-image: url("../images/eastWallFloralPattern.svg"); }
 
 h4, .h4 {
   font-family: 'Dancing Script', cursive;
@@ -7171,7 +7171,8 @@ p a {
   height: 50rem;
   width: 75rem; }
 
-.centerImage, #imageBox {
+#imageBox,
+.centerImage {
   height: 28rem;
   width: 42rem; }
 
