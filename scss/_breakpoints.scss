@@ -99,6 +99,14 @@
   #westWall, #eastWall {
     font-size: 12px;
   }
+  
+  .navbar {
+    height: 20vh;
+  }
+  
+  #advSearchBtn {
+    width: 50%;
+  }
 }
 
 @media all and (max-width: 58em) {
@@ -114,6 +122,14 @@
   
   .powerWords {
     font-size: 200%;
+  }
+  
+  #footerInnerWrapper {
+    flex-direction: column !important;
+  }
+  
+  .footerMenuGrouper {
+    width: 100% !important;
   }
 }
 
@@ -138,5 +154,9 @@
   .centerImage, #imageBox {
     height: 8rem;
     width: 12rem;
+  }
+  
+  #footerContainer {
+    font-size: 50%;
   }
 }

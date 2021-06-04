@@ -7289,7 +7289,13 @@ i {
         justify-content: space-around; } }
 @media all and (max-width: 63em) {
   #westWall, #eastWall {
-    font-size: 12px; } }
+    font-size: 12px; }
+
+  .navbar {
+    height: 20vh; }
+
+  #advSearchBtn {
+    width: 50%; } }
 @media all and (max-width: 58em) {
   #fringe {
     height: 34rem;
@@ -7300,7 +7306,16 @@ i {
     width: 18rem; }
 
   .powerWords {
-    font-size: 200%; } }
+    font-size: 200%; }
+
+  #footerInnerWrapper {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important; }
+
+  .footerMenuGrouper {
+    width: 100% !important; } }
 @media all and (max-width: 50em) {
   #fringe {
     height: 20rem;
@@ -7316,4 +7331,7 @@ i {
 
   .centerImage, #imageBox {
     height: 8rem;
-    width: 12rem; } }
+    width: 12rem; }
+
+  #footerContainer {
+    font-size: 50%; } }
