@@ -105,9 +105,9 @@
   }
   
   #advSearchBtn {
-    width: 50%;
+    margin-top: 10px;
   }
-  
+    
   #footerInnerWrapper {
     flex-direction: column !important;
   }
@@ -177,10 +177,5 @@
   #fringe {
     height: 16rem;
     width: 24rem;
-  }
-  
-  #advSearchBtn {
-    display: block !important;
-    width: 25%;
   }
 }

@@ -7119,9 +7119,6 @@ body {
     font-family: 'Euphoria Script', cursive;
     font-size: 400%; }
 
-#advSearchBtn {
-  width: 90%; }
-
 #mainTopSection {
   min-height: 90vh; }
 
@@ -7295,7 +7292,7 @@ i {
     height: 20vh; }
 
   #advSearchBtn {
-    width: 50%; }
+    margin-top: 10px; }
 
   #footerInnerWrapper {
     -webkit-box-orient: vertical !important;
@@ -7347,8 +7344,4 @@ i {
 
   #fringe {
     height: 16rem;
-    width: 24rem; }
-
-  #advSearchBtn {
-    display: block !important;
-    width: 25%; } }
+    width: 24rem; } }
