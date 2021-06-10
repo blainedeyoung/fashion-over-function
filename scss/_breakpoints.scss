@@ -172,11 +172,20 @@
   }
   
   .navbar-brand {
-    font-size: 200%;
+    font-size: 150% !important;
   }
   
   #fringe {
     height: 16rem;
     width: 24rem;
+  }
+  
+  .footerMenuGrouper {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  h5 {
+    font-size: 100% !important;
   }
 }
