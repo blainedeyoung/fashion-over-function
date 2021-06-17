@@ -7119,17 +7119,17 @@ body {
     font-family: 'Euphoria Script', cursive;
     font-size: 400%; }
 
-#mainTopSection {
+#main-top-section {
   min-height: 90vh; }
 
-#westWall {
+#west-wall {
   background-size: cover;
   background-repeat: no-repeat;
   width: 20%;
   text-shadow: 2px 2px 5px black;
   background-image: url("../images/westWallFloralPattern.svg"); }
 
-#eastWall {
+#east-wall {
   background-size: cover;
   background-repeat: no-repeat;
   width: 20%;
@@ -7152,7 +7152,7 @@ p a {
   p a:hover {
     background-color: orange; }
 
-.listBreaker {
+.list-breaker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7171,28 +7171,28 @@ p a {
   height: 50rem;
   width: 75rem; }
 
-#imageBox,
-.centerImage {
+#image-box,
+.center-image {
   height: 28rem;
   width: 42rem; }
 
-.powerWords {
+.power-words {
   font-size: 300%;
   color: red;
   text-shadow: 2px 2px 5px #cc0000;
   font-family: 'Permanent Marker', sans-serif; }
 
-.galleryImg {
+.gallery-img {
   height: 30rem;
   width: 20rem;
   border-radius: 10px; }
 
-#footerContainer {
+#footer-container {
   background: #f490c6;
   background: radial-gradient(circle, #f490c6 0%, #780979 51%, #7e29be 100%);
   color: white;
   font-size: 75%; }
-  #footerContainer h5, #footerContainer .h5 {
+  #footer-container h5, #footer-container .h5 {
     -ms-flex-item-align: start;
         align-self: flex-start; }
 
@@ -7202,7 +7202,7 @@ i {
   i:hover {
     color: blue; }
 
-.aboutPanel {
+.about-panel {
   min-height: 9rem;
   background-color: #D0D5DB; }
 
@@ -7211,7 +7211,7 @@ i {
     height: 48rem;
     width: 72rem; }
 
-  .centerImage, #imageBox {
+  .center-image, #image-box {
     height: 26rem;
     width: 39rem; } }
 @media all and (max-width: 107em) {
@@ -7219,7 +7219,7 @@ i {
     height: 44rem;
     width: 66rem; }
 
-  .centerImage, #imageBox {
+  .center-image, #image-box {
     height: 22rem;
     width: 33rem; } }
 @media all and (max-width: 100em) {
@@ -7227,7 +7227,7 @@ i {
     height: 42rem;
     width: 63rem; }
 
-  .centerImage, #imageBox {
+  .center-image, #image-box {
     height: 20rem;
     width: 30rem; } }
 @media all and (max-width: 92em) {
@@ -7235,7 +7235,7 @@ i {
     height: 40rem;
     width: 60rem; }
 
-  .centerImage, #imageBox {
+  .center-image, #image-box {
     height: 18rem;
     width: 27rem; } }
 @media all and (max-width: 82em) {
@@ -7243,33 +7243,33 @@ i {
     height: 38rem;
     width: 47rem; }
 
-  .centerImage, #imageBox {
+  .center-image, #image-box {
     height: 16rem;
     width: 24rem; }
 
-  #westWall, #eastWall {
+  #west-wall, #east-wall {
     width: 10%;
     font-size: 12px; } }
 @media all and (max-width: 75em) {
-  #mainTopSection, #westWall, #eastWall {
+  #main-top-section, #west-wall, #east-wall {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important; }
 
-  #westWall {
+  #west-wall {
     background-image: url(../images/westWallFloralPatternHorizontal.svg); }
 
-  #eastWall {
+  #east-wall {
     background-image: url(../images/eastWallFloralPatternHorizontal.svg); }
 
-  #westWallMenu, #eastWallMenu {
+  #west-wall-menu, #east-wall-menu {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: row !important;
             flex-direction: row !important; }
 
-  #westWall, #eastWall, #westWallMenu, #eastWallMenu {
+  #west-wall, #east-wall, #west-wall-menu, #east-wall-menu {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     width: 100%;
@@ -7277,7 +7277,7 @@ i {
     font-size: 16px;
     padding-bottom: 3rem; }
 
-  .listBreaker {
+  .list-breaker {
     width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -7286,41 +7286,41 @@ i {
     -ms-flex-pack: distribute;
         justify-content: space-around; } }
 @media all and (max-width: 63em) {
-  #westWall, #eastWall {
+  #west-wall, #east-wall {
     font-size: 12px; }
 
   .navbar {
     height: 20vh; }
 
-  #advSearchBtn {
+  #adv-search-btn {
     margin-top: 10px;
     margin-left: 0 !important; }
 
-  #footerInnerWrapper {
+  #footer-inner-wrapper {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important; }
 
-  .footerMenuGrouper {
+  .footer-menu-grouper {
     width: 100% !important; } }
 @media all and (max-width: 58em) {
   #fringe {
     height: 34rem;
     width: 51rem; }
 
-  .centerImage, #imageBox {
+  .center-image, #image-box {
     height: 12rem;
     width: 18rem; }
 
-  .powerWords {
+  .power-words {
     font-size: 200%; } }
 @media all and (max-width: 50em) {
   #fringe {
     height: 20rem;
     width: 30rem; }
 
-  .centerImage, #imageBox {
+  .center-image, #image-box {
     height: 10rem;
     width: 15rem; } }
 @media all and (max-width: 48em) {
@@ -7331,19 +7331,26 @@ i {
     height: 18rem;
     width: 27rem; }
 
-  .centerImage, #imageBox {
+  .center-image, #image-box {
     height: 8rem;
     width: 12rem; }
 
-  #footerContainer {
+  #footer-container {
     font-size: 50%; } }
 @media all and (max-width: 30em) {
   .navbar {
     height: 25vh; }
 
   .navbar-brand {
-    font-size: 200%; }
+    font-size: 150% !important; }
 
   #fringe {
     height: 16rem;
-    width: 24rem; } }
+    width: 24rem; }
+
+  .footer-menu-grouper {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+
+  h5, .h5 {
+    font-size: 100% !important; } }

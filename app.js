@@ -20,7 +20,7 @@ const popoverList = popoverTriggerList.map((popoverTriggerEl) => {
 
 //the two event listeners below toggle increased navbar size on collapse
 //so the links don't spill out over the page content
-const collapsible = document.querySelector("#topNavLinks");
+const collapsible = document.querySelector("#top-nav-links");
 const navbar = document.querySelector(".navbar");
 collapsible.addEventListener('show.bs.collapse', () => {
   navbar.classList.add("expanded");

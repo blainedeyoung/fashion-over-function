@@ -12,7 +12,7 @@ body {
 }
 
 .navbar {
-  @include backgroundGradient;
+  @include background-gradient;
   height: 10vh;
 
   & .navbar-brand {
@@ -21,16 +21,16 @@ body {
   }
 }
 
-#mainTopSection {
+#main-top-section {
   min-height: 90vh;
 }
 
-#westWall {
+#west-wall {
   @include walls;
   background-image: url("../images/westWallFloralPattern.svg");
 }
 
-#eastWall {
+#east-wall {
   @include walls;
   background-image: url("../images/eastWallFloralPattern.svg");
 }
@@ -56,7 +56,7 @@ p a {
   }
 }
 
-.listBreaker {
+.list-breaker {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,27 +68,27 @@ p a {
   width: 75rem;
 }
 
-#imageBox,
-.centerImage {
+#image-box,
+.center-image {
   height: 28rem;
   width: 42rem;
 }
 
-.powerWords {
+.power-words {
   font-size: 300%;
   color: red;
   text-shadow: 2px 2px 5px #cc0000;
   font-family: 'Permanent Marker', sans-serif;
 }
 
-.galleryImg {
+.gallery-img {
   height: 30rem;
   width: 20rem;
   border-radius: 10px;
 }
 
-#footerContainer {
-  @include backgroundGradient;
+#footer-container {
+  @include background-gradient;
   color: white;
   font-size: 75%;
 
@@ -106,7 +106,7 @@ i {
   }
 }
 
-.aboutPanel {
+.about-panel {
   min-height: 9rem;
   background-color: #D0D5DB;
 }
